@@ -1,0 +1,129 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    background: #eee;
+    margin: 0;
+    height: auto;
+}
+
+h1{
+     font-size: 2.5rem;
+     margin: 0;
+     text-transform: uppercase;
+     font-weight: 400;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.wrapper{
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero{
+    background: white;
+}
+
+.hero-content{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.hero-text p{
+    color: #888;
+}
+
+.btn{
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 2em 0 0;
+    border-radius: 50px;
+    padding: .5em 1.5em;
+    transition: background 500ms ease;
+}
+
+.btn:hover{
+    background: #f4f4f4;
+}
+
+.hero-img{
+    background: url(../images/samsung.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    flex: 0 1 60vw;
+}
+
+.title{
+    background-color: #333;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.title h2{
+    border-left: dotted 1px white;
+    border-right: dotted 1px white;
+    display: inline-block;
+    padding: 0 1em;
+}
+
+.caption{
+    text-align: center;
+    padding: 0.8em;
+}
+
+footer{
+    text-align: center;
+    padding: 1em 2em;
+    margin: 0 auto;
+    color: #333;
+}
+
+footer h3{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+/* 500px and Up */
+
+@media only screen and (min-width: 500px) {
+
+    .hero{
+        display: flex;
+        height: 100%;
+    }
+
+    .hero-text{
+        height: 10vh;
+    }
+
+    .hero-img{
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .btn{
+        padding: 1em 2em;
+    }
+}
